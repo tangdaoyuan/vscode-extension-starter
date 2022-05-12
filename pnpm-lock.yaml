@@ -36,8 +36,6 @@ importers:
       mocha: ^9.2.2
       semver: ^7.3.7
       typescript: ^4.6.4
-    dependencies:
-      semver: 7.3.7
     devDependencies:
       '@types/glob': 7.2.0
       '@types/mocha': 9.1.1
@@ -50,6 +48,7 @@ importers:
       eslint: 8.14.0
       glob: 8.0.1
       mocha: 9.2.2
+      semver: 7.3.7
       typescript: 4.6.4
 
 packages:
@@ -705,13 +704,13 @@ packages:
       semver: 7.3.7
     dev: true
 
-  /bundle-require/3.0.4_esbuild-wasm@0.14.38:
+  /bundle-require/3.0.4_esbuild-wasm@0.14.39:
     resolution: {integrity: sha512-VXG6epB1yrLAvWVQpl92qF347/UXmncQj7J3U8kZEbdVZ1ZkQyr4hYeL/9RvcE8vVVdp53dY78Fd/3pqfRqI1A==}
     engines: {node: ^12.20.0 || ^14.13.1 || >=16.0.0}
     peerDependencies:
       esbuild: '>=0.13'
     dependencies:
-      esbuild: /esbuild-wasm/0.14.38
+      esbuild: /esbuild-wasm/0.14.39
       load-tsconfig: 0.2.3
     dev: true
 
@@ -1062,8 +1061,8 @@ packages:
       is-symbol: 1.0.4
     dev: true
 
-  /esbuild-wasm/0.14.38:
-    resolution: {integrity: sha512-mObTw5/3+KIOTShVgk3fuEn+INnHgOSbWJuGkInEZTWpUOh/+TCSgRxl5cDon4OkoaLU5rWm7R7Dkl/mJv8SGw==}
+  /esbuild-wasm/0.14.39:
+    resolution: {integrity: sha512-ERthbXykeACyL8gmE1FE2njn/kyBrnj4tuoImtcpry8uNb/McUNtv08TdWA0pGHYxfD76XoaIwKEOMSv25IkFQ==}
     engines: {node: '>=12'}
     hasBin: true
     dev: true
@@ -2196,6 +2195,7 @@ packages:
     engines: {node: '>=10'}
     dependencies:
       yallist: 4.0.0
+    dev: true
 
   /mdast-util-from-markdown/0.8.5:
     resolution: {integrity: sha512-2hkTXtYYnr+NubD/g6KGBS/0mFmBcifAsI0yIWRiRo0PjVs6SSOSOdtzbp6kSGnShDN6G5aWZpKQ2lWRy27mWQ==}
@@ -2809,6 +2809,7 @@ packages:
     hasBin: true
     dependencies:
       lru-cache: 6.0.0
+    dev: true
 
   /serialize-javascript/6.0.0:
     resolution: {integrity: sha512-Qr3TosvguFt8ePWqsvRfrKyQXIiW+nGbYpy8XK24NQHE83caxWt+mIymTT19DGFbNWNLfEwsrkSmN64lVWB9ag==}
@@ -3062,11 +3063,11 @@ packages:
       typescript:
         optional: true
     dependencies:
-      bundle-require: 3.0.4_esbuild-wasm@0.14.38
+      bundle-require: 3.0.4_esbuild-wasm@0.14.39
       cac: 6.7.12
       chokidar: 3.5.3
       debug: 4.3.4
-      esbuild: /esbuild-wasm/0.14.38
+      esbuild: /esbuild-wasm/0.14.39
       execa: 5.1.1
       globby: 11.1.0
       joycon: 3.1.1
@@ -3198,7 +3199,7 @@ packages:
       stylus:
         optional: true
     dependencies:
-      esbuild: /esbuild-wasm/0.14.38
+      esbuild: /esbuild-wasm/0.14.39
       postcss: 8.4.13
       resolve: 1.22.0
       rollup: 2.71.1
@@ -3303,6 +3304,7 @@ packages:
 
   /yallist/4.0.0:
     resolution: {integrity: sha512-3wdGidZyq5PB084XLES5TpOSRA3wjXAlIWMhum2kRcv/41Sn2emQ0dycQW4uZXLejwKvg6EsvbdlVL+FYEct7A==}
+    dev: true
 
   /yaml-eslint-parser/0.5.0:
     resolution: {integrity: sha512-nJeyLA3YHAzhBTZbRAbu3W6xrSCucyxExmA+ZDtEdUFpGllxAZpto2Zxo2IG0r0eiuEiBM4e+wiAdxTziTq94g==}

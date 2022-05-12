@@ -15,7 +15,9 @@
     "lint:fix": "eslint . --fix",
     "typecheck": "tsc --noEmit",
     "ext:build": "cd extension && tsup src/extension.ts --external vscode",
-    "ext:dev": "cd extension && tsup src/extension.ts --external vscode --watch src"
+    "ext:dev": "cd extension && tsup src/extension.ts --external vscode --watch src",
+    "ext:pack": "pnpm run ext:build && cd extension && vsce package --no-dependencies",
+    "ext:publish": "pnpm run ext:build && cd extension && vsce publish --no-dependencies"
   },
   "resolutions": {
     "esbuild": "npm:esbuild-wasm"
