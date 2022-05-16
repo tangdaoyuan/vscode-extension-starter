@@ -3,7 +3,7 @@
 // Hover to view descriptions of existing attributes.
 // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
 {
-	"version": "0.2.0",
+	"version": "0.0.2",
 	"configurations": [
 		{
 			"name": "Run Extension",
@@ -13,9 +13,14 @@
 				"--extensionDevelopmentPath=${workspaceFolder}/extension"
 			],
 			"outFiles": [
-				"${workspaceFolder}/extension/dist/**/*.js"
+				"${workspaceFolder}/extension/dist/**/*.js",
+				"${workspaceFolder}/extension/dist/**/*.js.map"
 			],
-			"preLaunchTask": "npm: ext:dev"
+			"preLaunchTask": "npm: ext:dev",
+			"resolveSourceMapLocations": [
+				"${workspaceFolder}/extension/**",
+				"!**/node_modules/**"
+			]
 		}
 	]
 }
