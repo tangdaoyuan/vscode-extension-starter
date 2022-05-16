@@ -19,9 +19,6 @@
     "ext:pack": "pnpm run ext:build && cd extension && vsce package --no-dependencies",
     "ext:publish": "pnpm run ext:build && cd extension && vsce publish --no-dependencies"
   },
-  "resolutions": {
-    "esbuild": "npm:esbuild-wasm"
-  },
   "devDependencies": {
     "@suger-tdy/eslint-config": "^1.0.8",
     "@types/node": "^17.0.33",
